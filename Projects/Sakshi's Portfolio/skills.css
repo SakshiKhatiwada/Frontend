@@ -1,0 +1,136 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+:root {
+    --black: rgb(44, 43, 43);
+    --purple: rgb(97, 47, 177);
+    --grey: rgb(111, 109, 109);
+    --lightPurple: rgb(153, 116, 212);
+}
+
+.text{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: var(--grey);
+}
+
+.headContainer{
+    padding: 10px;
+    margin: 15px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media (max-width:440px)
+        { 
+            display: block;
+            font-size: 12px;
+            align-items: center;
+            justify-self: space-around;
+            background-color: #b4a5a5;
+            width: 100%;
+            .crescentIcon{
+                display: none;
+            }
+        }
+        
+    
+}
+.menus{
+    margin-right: 10px;
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+}
+
+/* .bodyContainer{
+    display:flex;
+    flex: 1;
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 100%;
+} */
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+h3{
+    color: var(--grey);
+} 
+}
+.bodyContainer{
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    justify-content: space-around;
+    align-items: center;
+
+    @media(max-width: 440px)
+    {
+        flex-direction: column;
+    }
+   
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-evenly;
+    margin: 40px;
+    padding: 30px;
+   /* align-items: center; */
+
+   .up, .down{
+    padding: 10px;
+    margin: 10px;
+    /* border: 1px solid red; */
+
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 15px;
+   }
+}
+
+.frontend, .designer {
+    display: none;
+}
+
+.up:hover,.down:hover{
+    background-color: var(--lightPurple);
+    transition: 0.5s ease;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.up:hover ~ .frontend, .up:hover~.frontend .progressbar{
+   
+        display: block;
+    
+
+}
+
+.up:hover ~ .designer, .up:hover~.designer .progressbar{
+   
+    display: block;
+
+
+}
+
+
+

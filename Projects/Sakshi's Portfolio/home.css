@@ -1,0 +1,180 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --black: rgb(44, 43, 43);
+    --grey: rgb(111, 109, 109);
+    --purple: rgb(97, 47, 177);
+}
+.text {
+    font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.headContainer{
+    padding: 10px;
+    margin: 15px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menus{
+    margin-right: 15px;
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+  
+}
+
+.phoneNav{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    display: none;  
+    
+    /* default display none */
+
+    ul{
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    
+    @media (max-width: 440px)
+    {
+        display: block;
+        flex-direction:column;
+        width: 100%;
+        background-color: #b4a5a5;
+        
+        /* height: 50px;
+        overflow: scroll; */
+
+        a{
+            color: rgb(0, 0, 0);
+           
+        }
+
+        ul{
+            display: flex;
+            flex-direction: row;
+            /* gap: 8px; */
+            justify-content: space-around;
+            font-size: 12px;
+        }
+    
+       .home 
+        {
+            color:rgb(100, 96, 208);
+        }
+    
+    
+    }
+}
+.bodyContainer{
+    /* border: 1px solid black; */
+    padding: 10px;
+    margin: 15px 10px;
+    /* margin: auto 0; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    @media(max-width: 440px)
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* for phone */
+    @media (max-width:440px)
+    {
+        .contactMeButton{
+            display:none;
+        }
+
+        .menus, .crescentIcon{
+            display:none;
+        }
+
+    }
+
+
+
+.socialLinks{
+    position: relative;
+    left: 15px;
+    bottom: 200px;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+   
+    @media(max-width: 440px)
+    {
+        flex-direction: row;
+        align-self: end;
+        gap: 5px;
+    }
+}
+
+.profile{
+    margin-bottom:13px;
+    font-size: 20px;
+}
+
+.intro{
+    /* width: 400px; */
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.intro h1 {
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.intro h2 {
+    /* font-size: 20px; */
+    margin: 8px 0;
+    font-weight: 800;
+    color: var(--grey);
+}
+
+.para{
+    font-size: 14px;
+    color: rgb(90, 85, 85);
+    font-weight: 650;
+}
+
+.contactMeButton {
+    margin: 15px 0;
+    padding: 15px;
+    background-color: var(--purple);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    width: 30%;
+}
+
+.myImg{
+    height: auto;
+    width: 200px;
+    margin-top: 20px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+}
+
