@@ -1,0 +1,52 @@
+C Programming 
+-------------
+
+Chrome
+Brave
+Edge 
+
+Web Browser - Friend Best 
+-----------
+
+Google - Search Engine
+Bing - Search Engine
+
+
+Web Development
+----------------
+
+1. Frontend 
+	- HTML - Hyper Text Markup Language
+	- CSS - Cascade Style Sheets
+	- Java Script - Programming Language 
+
+2. Backend
+
+-------------------------------------------
+1. Internet and How it works? 
+2. Browser and Search Engine
+3. 
+
+
+---------------------------------------------------
+Protocol: set of rules : Communication Govern
+1. HTTP - Hyper Text Transfer Protocal 
+https = secured (Encrypted) 
+2. TCP/IP -- Transmission Control Protocal
+3. Web Socket - Two Way COmmunication (Real Time Communication) 
+4. FTP - File Transfer Protocal
+5. Secure Shell 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
